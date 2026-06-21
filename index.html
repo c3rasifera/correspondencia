@@ -9,7 +9,7 @@
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#f4f0e7" />
     <title>Correspondència d'estiu — Gemma Calmet</title>
-    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="stylesheet" href="styles.css?v=5" />
   </head>
   <body>
     <a class="skip-link" href="#contingut">Anar al contingut</a>
@@ -19,7 +19,7 @@
         <span class="brand-mark" aria-hidden="true">✦</span>
         Correspondència d’estiu
       </a>
-      <a class="header-cta" href="#reserva">Reservar plaça</a>
+      <a class="header-cta" href="https://buy.stripe.com/5kQ00ca7O7S428H04i0Ny00">Comprar</a>
     </header>
 
     <main id="contingut">
@@ -29,7 +29,7 @@
           <h1>Correspondència<br /><em>d’estiu</em></h1>
           <p class="hero-claim">Tens una carta.<br />I porta el teu nom.</p>
           <p class="hero-text">En un món que ens ha acostumat a tenir-ho tot immediatament, aquesta és una invitació a recuperar el valor de l’espera.</p>
-          <a class="button" href="#reserva">Reservar la meva plaça <span aria-hidden="true">→</span></a>
+          <a class="button" href="https://buy.stripe.com/5kQ00ca7O7S428H04i0Ny00">Comprar la meva plaça <span aria-hidden="true">→</span></a>
         </div>
 
         <div class="hero-art reveal" aria-label="Un sobre obert al costat del mar" role="img">
@@ -140,7 +140,7 @@
           <span>Preu de l’experiència</span>
           <strong>49 €</strong>
           <small><em>4 cartes, 1 sorpresa i enviaments inclosos.</em></small>
-          <a class="button light" href="#reserva">Vull rebre les cartes <span aria-hidden="true">→</span></a>
+          <a class="button light" href="https://buy.stripe.com/5kQ00ca7O7S428H04i0Ny00">Vull rebre les cartes <span aria-hidden="true">→</span></a>
         </div>
       </section>
 
@@ -151,66 +151,39 @@
           <p>Aquest estiu només hi haurà <strong>50 places disponibles</strong>. Quan s’esgotin, la correspondència es tancarà.</p>
         </div>
         <div class="counter" aria-live="polite">
-          <strong id="places-count">50</strong>
+          <strong>50</strong>
           <span>places<br />disponibles</span>
-          <div class="counter-line"><i id="places-progress"></i></div>
+          <div class="counter-line"><i></i></div>
         </div>
       </section>
 
-      <section class="reservation" id="reserva">
+      <section class="reservation" id="compra">
         <div class="form-intro reveal">
           <p class="eyebrow">La teva bústia t’espera</p>
           <h2>Compra la<br />teva plaça</h2>
-          <p>Un procés breu i clar: confirma la compra, indica on vols rebre les cartes i ja ho tindràs.</p>
+          <p>Un procés breu i segur: fes el pagament, indica on vols rebre les cartes i ja ho tindràs.</p>
           <div class="mini-envelope" aria-hidden="true">✉</div>
         </div>
 
-        <form id="reservation-form" class="reservation-form reveal">
-          <div class="checkout-progress" aria-label="Procés de compra">
-            <span class="active" data-step-marker="1">1 · Compra</span>
-            <span data-step-marker="2">2 · Enviament</span>
-            <span data-step-marker="3">3 · Confirmació</span>
+        <div class="stripe-checkout-card reveal">
+          <p class="form-step-kicker">Pagament segur</p>
+          <h3>Tot en un sol pas</h3>
+          <p class="step-description">En prémer el botó aniràs a la pàgina segura de Stripe. Allà podràs pagar i indicar l’adreça d’enviament.</p>
+
+          <div class="checkout-summary">
+            <span>Correspondència Adlitteram</span>
+            <strong>49 €</strong>
+            <small>4 cartes, 1 sorpresa i enviaments inclosos</small>
           </div>
 
-          <div class="form-step" id="purchase-step">
-            <p class="form-step-kicker">Pas 1 de 2</p>
-            <h3>Comencem</h3>
-            <p class="step-description">Només necessitem les dades imprescindibles per identificar la teva compra.</p>
-            <div class="form-grid">
-            <label class="full">Nom i cognoms<input name="name" autocomplete="name" required /></label>
-            <label class="full">Correu electrònic<input type="email" name="email" autocomplete="email" required /></label>
-            </div>
-            <div class="checkout-summary"><span>Correspondència Adlitteram</span><strong>49 €</strong><small>4 cartes, 1 sorpresa i enviaments inclosos</small></div>
-            <button class="button submit-button" id="continue-to-shipping" type="button">Continuar amb l’enviament <span aria-hidden="true">→</span></button>
-          </div>
+          <ol class="secure-steps">
+            <li><span>1</span> Pagament segur</li>
+            <li><span>2</span> Dades d’enviament</li>
+            <li><span>3</span> Confirmació per correu</li>
+          </ol>
 
-          <div class="form-step" id="shipping-step" hidden>
-            <p class="form-step-kicker">Pas 2 de 2</p>
-            <h3>On vols rebre les cartes?</h3>
-            <p class="step-description">Aquestes dades s’utilitzaran exclusivament per fer-te arribar la correspondència.</p>
-            <div class="form-grid">
-            <label class="full">Adreça postal completa<input name="address" autocomplete="street-address" required /></label>
-            <label>Codi postal<input name="postal-code" autocomplete="postal-code" inputmode="numeric" pattern="[0-9]{5}" required /></label>
-            <label>Població<input name="city" autocomplete="address-level2" required /></label>
-            <label class="full">Província<input name="province" autocomplete="address-level1" required /></label>
-            </div>
-            <label class="privacy-check">
-              <input type="checkbox" name="privacy" required />
-              <span>Accepto la <button class="inline-link" type="button" data-dialog="privacy-dialog">política de privacitat</button> i les <button class="inline-link" type="button" data-dialog="terms-dialog">condicions de compra</button>.</span>
-            </label>
-            <div class="form-actions">
-              <button class="back-button" id="back-to-purchase" type="button">← Tornar</button>
-              <button class="button submit-button" type="submit">Finalitzar la compra · 49 € <span aria-hidden="true">→</span></button>
-            </div>
-          </div>
-        </form>
-
-        <div class="success-message" id="success-message" role="status" tabindex="-1" hidden>
-          <span aria-hidden="true">✓</span>
-          <p class="eyebrow">Compra confirmada</p>
-          <h2>Gràcies.</h2>
-          <p>La teva plaça per a Correspondència Adlitteram ha quedat confirmada.</p>
-          <p>Ben aviat rebràs un correu amb tots els detalls.</p>
+          <a class="button submit-button" href="https://buy.stripe.com/5kQ00ca7O7S428H04i0Ny00">Comprar de manera segura · 49 € <span aria-hidden="true">→</span></a>
+          <p class="stripe-note"><span aria-hidden="true">🔒</span> Pagament processat de manera segura per Stripe.</p>
         </div>
       </section>
 
@@ -257,6 +230,6 @@
       <p>No se cediran a tercers, excepte quan sigui imprescindible per prestar el servei o per obligació legal.</p>
     </dialog>
 
-    <script src="script.js?v=2"></script>
+    <script src="script.js?v=3"></script>
   </body>
 </html>
