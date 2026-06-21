@@ -27,6 +27,8 @@ jobs:
 
       - name: Preparar GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Preparar els fitxers del web
         uses: actions/upload-pages-artifact@v3
