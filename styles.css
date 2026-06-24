@@ -97,8 +97,9 @@ h3 { font-family: var(--serif); font-weight: 400; font-size: 1.55rem; line-heigh
 .availability { display: grid; grid-template-columns: 1fr auto; gap: 5rem; align-items: center; }.availability h2 { margin-bottom: 1.5rem; }.availability p { max-width: 570px; color: var(--muted); font-size: 1.04rem; }
 .counter { display: grid; grid-template-columns: auto auto; align-items: center; gap: 0 1.2rem; }.counter strong { font-family: var(--serif); font-size: 7rem; font-weight: 400; line-height: 1; }.counter span { text-transform: uppercase; font-size: .72rem; letter-spacing: .14em; }.counter-line { height: 3px; background: var(--sand); grid-column: 1 / -1; margin-top: 1rem; }.counter-line i { display: block; height: 100%; width: 100%; background: var(--terracotta); transition: width .5s; }
 
-.reservation { display: grid; grid-template-columns: .8fr 1.2fr; background: var(--ink); color: var(--white); }
+.reservation { display: grid; grid-template-columns: .95fr 1.05fr; background: var(--ink); color: var(--white); }
 .form-intro { padding: clamp(4rem, 8vw, 8rem); background: #263f41; position: relative; overflow: hidden; }.form-intro .eyebrow { color: #e3b49e; }.form-intro p:not(.eyebrow) { color: #b9c9c7; max-width: 32rem; font-size: 1.04rem; }.mini-envelope { font-size: 8rem; color: rgba(255,255,255,.06); position: absolute; right: 2rem; bottom: 1rem; }
+.reservation-title { max-width: 100%; font-size: clamp(3.15rem, 4.15vw, 4.8rem); line-height: .98; letter-spacing: -.04em; margin-bottom: 1.8rem; overflow-wrap: normal; }
 .stripe-checkout-card { padding: clamp(4rem, 7vw, 7rem); background: var(--white); color: var(--ink); display: flex; flex-direction: column; justify-content: center; }
 .checkout-progress { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; margin-bottom: 3.5rem; border-bottom: 1px solid #ced5d2; }
 .checkout-progress span { color: #8b9795; padding: 0 0 .8rem; text-transform: uppercase; letter-spacing: .1em; font-size: .64rem; }
@@ -143,6 +144,7 @@ footer { padding: 4rem clamp(1.5rem, 8vw, 9rem); display: grid; grid-template-co
 
 @media (max-width: 900px) {
   .split-section, .offer, .reservation { grid-template-columns: 1fr; }
+  .reservation-title { max-width: 13ch; }
   .cards-grid { grid-template-columns: 1fr; }.feature-card { min-height: 550px; border-right: 1px solid rgba(31,57,59,.2); border-bottom: 1px solid rgba(31,57,59,.2); }
   .feature-image { height: 315px; }
   .why-visual { min-height: 620px; }.steps { grid-template-columns: 1fr 1fr; }.steps li:nth-child(2) { border-right: 1px solid rgba(31,57,59,.2); }.steps li { border-bottom: 1px solid rgba(31,57,59,.2); }
@@ -160,6 +162,7 @@ footer { padding: 4rem clamp(1.5rem, 8vw, 9rem); display: grid; grid-template-co
   .steps { grid-template-columns: 1fr; }.steps li { min-height: 220px; border-right: 1px solid rgba(31,57,59,.2); }.offer { gap: 3rem; }.offer ul { columns: 1; }
   .availability { grid-template-columns: 1fr; gap: 2rem; }.counter { width: fit-content; }.counter strong { font-size: 6rem; }
   .form-intro, .stripe-checkout-card, .success-message { padding: 5rem 1.5rem; }.form-grid { grid-template-columns: 1fr; }.form-grid label { grid-column: 1 / -1; }
+  .reservation-title { font-size: clamp(2.45rem, 11vw, 4.1rem); max-width: 12ch; }
   .checkout-progress { gap: .25rem; }.checkout-progress span { font-size: .58rem; }.form-actions { grid-template-columns: 1fr; }.back-button { min-height: 48px; grid-row: 2; }
   .logistics { display: block; padding: 2.5rem 1.5rem; }.logistics h2 { margin-bottom: 1rem; }
   footer { grid-template-columns: 1fr; padding: 4rem 1.5rem; } footer > span { grid-column: auto; }
