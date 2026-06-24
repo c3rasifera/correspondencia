@@ -162,6 +162,7 @@ footer { padding: 4rem clamp(1.5rem, 8vw, 9rem); display: grid; grid-template-co
   .steps { grid-template-columns: 1fr; }.steps li { min-height: 220px; border-right: 1px solid rgba(31,57,59,.2); }.offer { gap: 3rem; }.offer ul { columns: 1; }
   .availability { grid-template-columns: 1fr; gap: 2rem; }.counter { width: fit-content; }.counter strong { font-size: 6rem; }
   .form-intro, .stripe-checkout-card, .success-message { padding: 5rem 1.5rem; }.form-grid { grid-template-columns: 1fr; }.form-grid label { grid-column: 1 / -1; }
+  .mini-envelope { display: none; }
   .reservation-title { font-size: clamp(2.45rem, 11vw, 4.1rem); max-width: 12ch; }
   .checkout-progress { gap: .25rem; }.checkout-progress span { font-size: .58rem; }.form-actions { grid-template-columns: 1fr; }.back-button { min-height: 48px; grid-row: 2; }
   .logistics { display: block; padding: 2.5rem 1.5rem; }.logistics h2 { margin-bottom: 1rem; }
