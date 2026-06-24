@@ -124,6 +124,14 @@ input, textarea { width: 100%; border: 0; border-bottom: 1px solid #aab5b2; back
 .success-message { padding: clamp(4rem, 8vw, 8rem); background: var(--white); color: var(--ink); display: flex; flex-direction: column; justify-content: center; }.success-message[hidden] { display: none; }.success-message > span { display: grid; place-items: center; width: 70px; aspect-ratio: 1; border: 1px solid var(--terracotta); border-radius: 50%; color: var(--terracotta); font-size: 2rem; margin-bottom: 2rem; }.success-message h2 { margin-bottom: 2rem; }.success-message p:not(.eyebrow) { max-width: 500px; }
 
 .logistics { padding: 2.5rem clamp(1.5rem, 8vw, 9rem); display: flex; gap: 4rem; align-items: baseline; border-bottom: 1px solid rgba(31,57,59,.2); }.logistics h2 { font-family: var(--sans); font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .16em; white-space: nowrap; }.logistics p { color: var(--muted); font-size: .95rem; max-width: 740px; }
+.about-author { padding: clamp(5rem, 9vw, 8rem) clamp(1.5rem, 8vw, 9rem); background: var(--paper); border-bottom: 1px solid rgba(31,57,59,.16); }
+.about-author-grid { display: grid; grid-template-columns: minmax(260px, .85fr) minmax(320px, 1fr); gap: clamp(3rem, 8vw, 8rem); align-items: start; border-top: 1px solid rgba(31,57,59,.22); padding-top: clamp(2.5rem, 5vw, 4rem); }
+.about-author h2 { font-size: clamp(2.7rem, 4.7vw, 5rem); line-height: 1; max-width: 9ch; }
+.about-author-copy { max-width: 680px; }
+.about-author-copy p { margin: 0 0 1.15rem; color: var(--muted); font-size: clamp(1.05rem, 1.35vw, 1.25rem); line-height: 1.72; }
+.about-author-copy p:first-child { color: var(--ink); font-family: var(--serif); font-size: clamp(1.45rem, 2.1vw, 2rem); line-height: 1.25; margin-bottom: 1.6rem; }
+.author-meta { margin-top: 2.2rem !important; color: var(--terracotta) !important; text-transform: uppercase; letter-spacing: .14em; font-size: .78rem !important; font-weight: 600; }
+.author-meta a { text-decoration: none; border-bottom: 1px solid currentColor; }
 footer { padding: 4rem clamp(1.5rem, 8vw, 9rem); display: grid; grid-template-columns: 1fr 1fr auto; gap: 3rem; align-items: end; background: var(--paper-light); } footer strong { font-family: var(--serif); font-size: 1.7rem; font-weight: 400; } footer p, footer > span { color: var(--muted); font-size: .86rem; } footer nav { display: flex; flex-wrap: wrap; gap: .6rem 1.5rem; } footer nav a, footer nav button { appearance: none; border: 0; border-bottom: 1px solid currentColor; padding: 0; background: transparent; color: var(--ink); font: .82rem var(--sans); cursor: pointer; }
 
 .legal-dialog { width: min(680px, calc(100% - 2rem)); max-height: min(760px, calc(100vh - 2rem)); border: 0; padding: clamp(2rem, 6vw, 4.5rem); background: var(--paper-light); color: var(--ink); box-shadow: 0 24px 80px rgba(18,35,36,.3); }
@@ -148,6 +156,7 @@ footer { padding: 4rem clamp(1.5rem, 8vw, 9rem); display: grid; grid-template-co
   .cards-grid { grid-template-columns: 1fr; }.feature-card { min-height: 550px; border-right: 1px solid rgba(31,57,59,.2); border-bottom: 1px solid rgba(31,57,59,.2); }
   .feature-image { height: 315px; }
   .why-visual { min-height: 620px; }.steps { grid-template-columns: 1fr 1fr; }.steps li:nth-child(2) { border-right: 1px solid rgba(31,57,59,.2); }.steps li { border-bottom: 1px solid rgba(31,57,59,.2); }
+  .about-author-grid { grid-template-columns: 1fr; gap: 2.5rem; }.about-author h2 { max-width: 12ch; }
   footer { grid-template-columns: 1fr 1fr; } footer > span { grid-column: 1 / -1; }
 }
 
@@ -166,6 +175,7 @@ footer { padding: 4rem clamp(1.5rem, 8vw, 9rem); display: grid; grid-template-co
   .reservation-title { font-size: clamp(2.45rem, 11vw, 4.1rem); max-width: 12ch; }
   .checkout-progress { gap: .25rem; }.checkout-progress span { font-size: .58rem; }.form-actions { grid-template-columns: 1fr; }.back-button { min-height: 48px; grid-row: 2; }
   .logistics { display: block; padding: 2.5rem 1.5rem; }.logistics h2 { margin-bottom: 1rem; }
+  .about-author { padding: 5rem 1.5rem; }.about-author-grid { padding-top: 2.5rem; }.about-author h2 { font-size: 3.1rem; }.about-author-copy p:first-child { font-size: 1.45rem; }.author-meta { font-size: .72rem !important; }
   footer { grid-template-columns: 1fr; padding: 4rem 1.5rem; } footer > span { grid-column: auto; }
 }
 
