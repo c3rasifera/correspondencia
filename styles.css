@@ -88,7 +88,9 @@ h3 { font-family: var(--serif); font-weight: 400; font-size: 1.55rem; line-heigh
 .steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, 1fr); }
 .steps li { padding: 1.5rem 2rem; border-left: 1px solid rgba(31,57,59,.2); min-height: 340px; display: flex; flex-direction: column; justify-content: flex-start; gap: 3rem; }.steps li:last-child { border-right: 1px solid rgba(31,57,59,.2); }
 .steps li > span { font-family: var(--serif); color: var(--terracotta); font-size: 3rem; }.steps h3 { margin: 0 0 .7rem; }.steps p { margin: 0; color: var(--muted); font-size: 1rem; }
-.process-note { max-width: 760px; margin: 2rem 0 0; color: var(--muted); font-size: .9rem; }
+.process-note { max-width: 820px; margin: 2.25rem 0 0; padding: 1.25rem 0 0 1.5rem; border-top: 1px solid rgba(31,57,59,.18); border-left: 2px solid var(--terracotta); color: var(--muted); }
+.process-note span { display: block; margin-bottom: .45rem; color: var(--terracotta); text-transform: uppercase; letter-spacing: .14em; font-size: .68rem; font-weight: 600; }
+.process-note p { margin: 0; font-size: .94rem; line-height: 1.65; }
 
 .offer { background: var(--terracotta); color: var(--white); display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; }
 .offer .eyebrow { color: #f0d2c5; }.offer h2 em { color: #f3d9cd; }.offer ul { list-style: none; padding: 0; margin: 3rem 0 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(3, auto); gap: .75rem 4rem; }.offer li { font-size: 1.03rem; display: grid; grid-template-columns: .45rem 1fr; gap: .8rem; align-items: start; }.offer li:nth-child(1) { grid-column: 1; grid-row: 1; }.offer li:nth-child(2) { grid-column: 1; grid-row: 2; }.offer li:nth-child(3) { grid-column: 1; grid-row: 3; }.offer li:nth-child(4) { grid-column: 2; grid-row: 1; }.offer li:nth-child(5) { grid-column: 2; grid-row: 2; }.offer li:nth-child(6) { grid-column: 2; grid-row: 3; }.offer li::before { content: ""; width: .34rem; aspect-ratio: 1; border-radius: 50%; background: #f3d9cd; margin-top: .72em; }
