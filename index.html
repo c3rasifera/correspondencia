@@ -9,7 +9,7 @@
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#f4f0e7" />
     <title>Correspondència d'estiu — Gemma Calmet</title>
-    <link rel="stylesheet" href="styles.css?v=12" />
+    <link rel="stylesheet" href="styles.css?v=13" />
   </head>
   <body>
     <a class="skip-link" href="#contingut">Anar al contingut</a>
@@ -19,7 +19,7 @@
         <span class="brand-mark" aria-hidden="true">✦</span>
         Correspondència d’estiu
       </a>
-      <a class="header-cta" href="https://buy.stripe.com/5kQ00ca7O7S428H04i0Ny00">Comprar</a>
+      <a class="header-cta" href="#compra">Inscripció tancada</a>
     </header>
 
     <main id="contingut">
@@ -29,7 +29,7 @@
           <h1>Correspondència<br /><em>d’estiu</em></h1>
           <p class="hero-claim">Tens una carta.<br />I porta el teu nom.</p>
           <p class="hero-text">En un món que ens ha acostumat a tenir-ho tot immediatament, aquesta és una invitació a recuperar el valor de l’espera.</p>
-          <a class="button" href="https://buy.stripe.com/5kQ00ca7O7S428H04i0Ny00">Uneix-te a la primera edició<span aria-hidden="true">→</span></a>
+          <a class="button" href="#compra">Veure estat de la inscripció<span aria-hidden="true">→</span></a>
         </div>
 
         <div class="hero-art reveal" aria-label="Un sobre obert al costat del mar" role="img">
@@ -160,19 +160,19 @@
         <div class="price-box">
           <span>Preu de l’experiència</span>
           <strong>49 €</strong>
-          <small><em>Només 50 bústies rebran aquestes cartes.</em></small>
-          <a class="button light" href="https://buy.stripe.com/5kQ00ca7O7S428H04i0Ny00">Vull rebre les cartes <span aria-hidden="true">→</span></a>
+          <small><em>La inscripció per a aquesta edició ja està tancada.</em></small>
+          <span class="button light is-disabled" aria-disabled="true">Inscripció tancada</span>
         </div>
       </section>
 
       <section class="availability section-narrow reveal" aria-labelledby="limited-title">
         <div>
-          <p class="eyebrow">Només aquest estiu</p>
-          <h2 id="limited-title">Edició limitada</h2>
-          <p><strong>Només 50 bústies rebran aquestes cartes.</strong> Quan s’esgotin, la correspondència es tancarà.</p>
+          <p class="eyebrow">Gràcies per fer-ho possible</p>
+          <h2 id="limited-title">Inscripció tancada</h2>
+          <p><strong>La primera edició de Correspondència d’estiu ja ha tancat inscripcions.</strong> Moltes gràcies a totes les persones que heu reservat una bústia i heu fet lloc per rebre cartes aquest estiu.</p>
         </div>
         <div class="counter" aria-live="polite">
-          <strong>50</strong>
+          <strong>0</strong>
           <span>bústies<br />disponibles</span>
           <div class="counter-line"><i></i></div>
         </div>
@@ -180,31 +180,30 @@
 
       <section class="reservation" id="compra">
         <div class="form-intro reveal">
-          <p class="eyebrow">La teva bústia t’espera</p>
-          <h2 class="reservation-title">Reserva la teva<br />correspondència</h2>
-          <p>Un procés breu i segur: fes el pagament, indica on vols rebre les cartes i ja ho tindràs.</p>
+          <p class="eyebrow">Primera edició completa</p>
+          <h2 class="reservation-title">Inscripció<br />tancada</h2>
+          <p>Moltes gràcies per l’acollida. El període d’inscripció a Correspondència d’estiu ha finalitzat i ja no s’accepten noves reserves.</p>
           <div class="mini-envelope" aria-hidden="true">✉</div>
         </div>
 
-        <div class="stripe-checkout-card reveal">
-          <p class="form-step-kicker">Pagament segur</p>
-          <h3>Tot en un sol pas</h3>
-          <p class="step-description">En prémer el botó aniràs a la pàgina segura de Stripe. Allà podràs pagar i indicar l’adreça d’enviament.</p>
+        <div class="stripe-checkout-card closed-checkout-card reveal">
+          <p class="form-step-kicker">Gràcies per ser-hi</p>
+          <h3>Les reserves ja estan tancades</h3>
+          <p class="step-description">Hem retirat l’accés al pagament perquè no es puguin fer noves compres fora del període d’inscripció.</p>
 
           <div class="checkout-summary">
             <span>Correspondència Adlitteram</span>
-            <strong>49 €</strong>
-            <small>4 cartes físiques, detalls sorpresa, postal limitada, correspondència compartida, enviaments inclosos i edició limitada a 50 bústies</small>
+            <strong>Tancada</strong>
+            <small>La primera edició continua el seu camí per correu amb les persones inscrites. Gràcies per haver format part d’aquesta espera compartida.</small>
           </div>
 
-          <ol class="secure-steps">
-            <li><span>1</span> Pagament segur</li>
-            <li><span>2</span> Dades d’enviament</li>
-            <li><span>3</span> Confirmació per correu</li>
+          <ol class="secure-steps closed-steps">
+            <li><span>1</span> Inscripció finalitzada</li>
+            <li><span>2</span> Compra desactivada</li>
+            <li><span>3</span> Cartes en preparació</li>
           </ol>
 
-          <a class="button submit-button" href="https://buy.stripe.com/5kQ00ca7O7S428H04i0Ny00">Comprar de manera segura · 49 € <span aria-hidden="true">→</span></a>
-          <p class="stripe-note"><span aria-hidden="true">🔒</span> Pagament processat de manera segura per Stripe.</p>
+          <span class="button submit-button is-disabled" aria-disabled="true">Inscripció tancada</span>
         </div>
       </section>
 
