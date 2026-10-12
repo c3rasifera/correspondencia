@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Fraunces:ital,wght@0,400;0,500;1,400&family=Mulish:wght@400;500;600;700&display=swap');
+:root{--paper:#F7F1E8;--green:#0A3323;--pink:#D3968C;--ink:#2B2B23}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--green);font:15px/1.7 Mulish,Arial,sans-serif}a{color:inherit;text-underline-offset:4px}header,footer,.archive{max-width:1320px;margin:auto;padding:25px 5%;display:flex;justify-content:space-between;align-items:center;gap:20px}header{border-bottom:1px solid #0a332326}.brand{text-decoration:none;font:23px Fraunces,Georgia,serif}.brand span{display:block;font:10px Alata,sans-serif;letter-spacing:4px}.season{font:italic 17px Fraunces,Georgia,serif}main{max-width:1320px;margin:auto;display:grid;grid-template-columns:1.12fr 1fr;gap:7%;padding:60px 5% 55px;align-items:center}.eyebrow{font-size:10px;font-weight:700;letter-spacing:2px;margin:0 0 24px}h1{font:400 clamp(48px,5.6vw,80px)/1.04 Fraunces,Georgia,serif;letter-spacing:-3px;margin:0}h1 em{font-weight:400}.year{display:inline-block;margin-left:14px;font:13px Mulish,Arial,sans-serif;letter-spacing:2px;vertical-align:middle;border-top:1px solid var(--pink);border-bottom:1px solid var(--pink);padding:6px 0}.claim{font:italic 24px/1.4 Fraunces,Georgia,serif;margin:25px 0}.copy{color:var(--ink);max-width:520px}.copy p{margin:0 0 18px}.edition{display:flex;align-items:center;gap:20px;border-top:1px solid #0a33232b;margin-top:28px;padding-top:20px}.number{font:48px Fraunces,Georgia,serif;color:#9c4942}.edition p{font-size:12px;margin:0}.edition strong{font-size:14px}.letter{position:relative;background:#fffcf6;border:1px solid #ded5c8;box-shadow:5px 7px 0 #e9e1d5;padding:30px 36px 25px}.letter:before{content:'';position:absolute;left:0;top:0;right:0;height:5px;background:repeating-linear-gradient(90deg,var(--green) 0 20px,transparent 20px 27px,var(--pink) 27px 47px,transparent 47px 54px)}.letter-top{display:flex;justify-content:space-between;align-items:center;margin:0 0 26px;font:italic 19px/1.4 Fraunces,Georgia,serif}.stamp{border:1px dashed #839958;outline:1px solid #839958;outline-offset:4px;text-align:center;padding:6px 12px;font:8px/1.6 Alata,Arial,sans-serif;letter-spacing:1px;transform:rotate(6deg)}.stamp b{font-size:26px;font-weight:400}.letter .eyebrow{font-size:9px;margin-bottom:12px;color:#795d52}h2{font:400 34px/1.12 Fraunces,Georgia,serif;letter-spacing:-1px;margin:0 0 16px}.letter>p:not(.eyebrow){font-size:13px;color:var(--ink);margin-bottom:22px}form>label:not(.consent){display:block;font-size:12px;font-weight:700;margin:14px 0 5px}input:not([type=checkbox]){width:100%;border:1px solid #b9b9a7;border-radius:0;background:transparent;padding:12px;font:14px Mulish,Arial,sans-serif;color:var(--ink)}input::placeholder{color:#777567}.consent{display:flex;align-items:flex-start;gap:9px;font-size:10px;line-height:1.6;margin:18px 0}.consent input{flex-shrink:0;margin:3px 0;width:16px;height:16px;accent-color:var(--green)}button{width:100%;padding:15px 20px;background:var(--green);color:var(--paper);border:1px solid var(--green);font:600 13px Mulish,Arial,sans-serif;cursor:pointer;display:flex;justify-content:space-between;align-items:center}button:hover{background:#174b35}button:disabled{opacity:.65;cursor:wait}.note{font-size:10px;line-height:1.5;text-align:center;color:#696b5c;margin:14px 0 0}#form-status{font-size:12px;color:#9b2929;margin:8px 0}#form-status:empty{display:none}.archive{border-top:1px solid #0a332326;border-bottom:1px solid #0a332326;font-size:11px}.archive>span{font:italic 18px Fraunces,Georgia,serif}footer{font-size:10px;padding-top:24px;padding-bottom:24px}footer nav{display:flex;gap:20px}.trap{position:absolute;left:-10000px}.skip{position:absolute;top:-100px;background:var(--green);color:white;padding:10px;z-index:2}.skip:focus{top:10px}:focus-visible{outline:3px solid #9c4942;outline-offset:4px}[hidden]{display:none!important}h3{font:28px/1.2 Fraunces,Georgia,serif}.legal{display:block;max-width:780px;min-height:70vh}.legal h1{font-size:44px;letter-spacing:-1px}.legal h2{font-size:24px;margin-top:30px}@media(min-width:1450px){main{padding-top:85px;padding-bottom:80px}}@media(max-width:800px){main{grid-template-columns:1fr;padding:40px 6%;gap:32px}.introduction{max-width:560px}.letter{max-width:560px;width:100%;margin:auto}h1{font-size:clamp(43px,9vw,70px)}.archive,footer{align-items:flex-start;flex-direction:column;gap:12px}.season{font-size:13px}.brand{font-size:19px}}@media(max-width:400px){.letter{padding:25px 22px}.year{margin-left:8px;font-size:10px}h1{letter-spacing:-2px}.season{display:none}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+@media(max-width:400px){h1{font-size:clamp(34px,10.6vw,42px)}input:not([type=checkbox]){font-size:16px}}
+
+/* El formulari té espai propi i amplada suficient per al text legal. */
+main{display:block;padding-top:60px}
+.introduction{display:grid;grid-template-columns:1.1fr 1fr;gap:7%;align-items:center;margin-bottom:50px;max-width:none}
+.intro-heading,.intro-details{min-width:0}
+.intro-details{padding-top:18px}
+.copy{max-width:none}
+.claim{max-width:24ch}
+.letter{display:grid;grid-template-columns:minmax(230px,.7fr) minmax(0,1.3fr);gap:36px;max-width:none;width:100%;padding:36px;min-width:0}
+.letter-copy{padding:12px 8px 0 0;min-width:0}
+.letter-top{margin-bottom:42px}
+.letter-copy>p:not(.eyebrow){font-size:14px;max-width:32ch;color:var(--ink)}
+.letter-form{min-width:0;background:#fffcf6;isolation:isolate}
+.google-form{display:block;width:100%;height:900px;border:0;margin:0;background:#fff;mix-blend-mode:multiply}
+.form-alternative{font-size:12px;line-height:1.6}
+@media(max-width:1050px){
+ .introduction{grid-template-columns:1fr;gap:18px}
+ .intro-details{max-width:700px;padding-top:0}
+ h1{font-size:clamp(48px,7.4vw,76px)}
+ .claim{max-width:none}
+ .letter{grid-template-columns:1fr;max-width:760px;margin-inline:auto;padding:30px}
+ .letter-copy{display:grid;grid-template-columns:1fr 1fr;column-gap:30px;padding:0}
+ .letter-top{grid-column:1/-1;margin-bottom:28px}
+ .letter-copy .eyebrow{grid-column:1/-1}
+ .letter-copy>p:not(.eyebrow){margin:0;max-width:none}
+ .google-form{height:900px}
+}
+@media(max-width:600px){
+ main{padding:35px 6%}
+ .introduction{margin-bottom:32px}
+ h1{font-size:clamp(34px,10.6vw,60px)}
+ .letter{padding:24px 12px;gap:24px}
+ .letter-copy{display:block;padding:0 10px}
+ .letter-top{margin-bottom:25px}
+ .letter-copy>p:not(.eyebrow){margin-bottom:0}
+ .google-form{height:1150px}
+ .form-alternative,.letter-form>.note{padding-inline:10px}
+}
+@media(max-width:400px){.google-form{height:1300px}}
+
+/* La fusió tenyeix visualment el blanc de Google amb el paper del marc.
+   L’iframe conserva el seu desplaçament si el contingut ocupa més alçada. */
+@media(forced-colors:active){.google-form{mix-blend-mode:normal}}

@@ -30,10 +30,16 @@ jobs:
         with:
           enablement: true
 
+      - name: Preparar només fitxers públics
+        run: |
+          mkdir -p dist
+          cp index.html styles.css script.js nadal.css nadal.js privacitat.html avis-legal.html dist/
+          cp -R assets estiu-2026 dist/
+
       - name: Preparar els fitxers del web
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: dist
 
       - name: Publicar
         id: deployment
